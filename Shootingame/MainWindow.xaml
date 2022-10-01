@@ -1,0 +1,14 @@
+﻿<Window x:Class="Shootingame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shootingame"
+        mc:Ignorable="d"
+        Title="Shooting Game" Height="615" Width="540">
+    <Canvas Name="MyCanvas" Focusable="True" Background="Black" KeyDown="OnKeyDown" KeyUp="OnKeyUp">
+        <Rectangle Name="player" Fill="Yellow" Width="50" Height="60" Canvas.Left="246" Canvas.Top="490" />
+        <Label Name="scoreText" FontSize="18" Foreground="White" Content="Score: 0" FontWeight="Bold"/>
+        <Label Name="damageText" FontSize="18" Foreground="White" Content="Score: 0" FontWeight="Bold" Canvas.Left="402" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Window>
